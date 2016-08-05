@@ -1,0 +1,116 @@
+@import "syntax-variables";
+
+atom-text-editor, :host {
+  background-color: @syntax-background-color;
+  color: @syntax-text-color;
+}
+
+atom-text-editor .gutter, :host .gutter {
+  background-color: @syntax-gutter-background-color;
+  color: @syntax-gutter-text-color;
+}
+
+atom-text-editor .gutter .line-number.cursor-line, :host .gutter .line-number.cursor-line {
+  background-color: @syntax-gutter-background-color-selected;
+  color: @syntax-gutter-text-color-selected;
+}
+
+atom-text-editor .gutter .line-number.cursor-line-no-selection, :host .gutter .line-number.cursor-line-no-selection {
+  color: @syntax-gutter-text-color-selected;
+}
+
+atom-text-editor .wrap-guide, :host .wrap-guide {
+  color: @syntax-wrap-guide-color;
+}
+
+atom-text-editor .indent-guide, :host .indent-guide {
+  color: @syntax-indent-guide-color;
+}
+
+atom-text-editor .invisible-character, :host .invisible-character {
+  color: @syntax-invisible-character-color;
+}
+
+atom-text-editor .search-results .marker .region, :host .search-results .marker .region {
+  background-color: transparent;
+  border: @syntax-result-marker-color;
+}
+
+atom-text-editor .search-results .marker.current-result .region, :host .search-results .marker.current-result .region {
+  border: @syntax-result-marker-color-selected;
+}
+
+atom-text-editor.is-focused .cursor, :host(.is-focused) .cursor {
+  border-color: @syntax-cursor-color;
+}
+
+atom-text-editor.is-focused .selection .region, :host(.is-focused) .selection .region {
+  background-color: @syntax-selection-color;
+}
+
+atom-text-editor.is-focused .line-number.cursor-line-no-selection, atom-text-editor.is-focused .line.cursor-line, :host(.is-focused) .line-number.cursor-line-no-selection, :host(.is-focused) .line.cursor-line {
+  background-color: rgba(0, 0, 0, 0.07);
+}
+
+.comment {
+  color: #473C45;
+}
+
+.string {
+  color: #805978;
+}
+
+.constant {
+  color: #A8885A;
+}
+
+.variable.parameter, .variable.other {
+  color: #596380;
+}
+
+.keyword:not(.keyword.operator), .keyword.operator.logical {
+  color: #728059;
+}
+
+.storage {
+  color: #9EBF60;
+}
+
+.entity {
+  color: #6078BF;
+}
+
+.entity.other.inherited-class {
+  font-style: italic;
+}
+
+.support {
+  color: #8A4B66;
+}
+
+.support.type.exception {
+  color: #893062;
+}
+
+.entity.name.tag {
+}
+
+.entity.other.attribute-name {
+}
+
+.support.constant {
+}
+
+.support.type, .support.class {
+}
+
+.support.other.variable {
+}
+
+.invalid {
+  background-color: #5F0047;
+}
+
+.meta.function.section {
+  background-color: #371D28;
+}
